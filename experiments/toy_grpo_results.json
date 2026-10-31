@@ -1,0 +1,275 @@
+{
+  "task": "contextual-bandit-grpo-validation",
+  "note": "Toy validation of the GRPO update; not an LLM result.",
+  "steps": 300,
+  "seeds": 5,
+  "runs": [
+    {
+      "group_size": 1,
+      "seed": 0,
+      "initial_accuracy": 0.5,
+      "final_accuracy": 0.5,
+      "initial_reward": 0.3333333432674408,
+      "final_reward": 0.325,
+      "steps": 300
+    },
+    {
+      "group_size": 1,
+      "seed": 1,
+      "initial_accuracy": 0.5,
+      "final_accuracy": 0.5,
+      "initial_reward": 0.3333333432674408,
+      "final_reward": 0.325,
+      "steps": 300
+    },
+    {
+      "group_size": 1,
+      "seed": 2,
+      "initial_accuracy": 0.5,
+      "final_accuracy": 0.5,
+      "initial_reward": 0.3333333432674408,
+      "final_reward": 0.325,
+      "steps": 300
+    },
+    {
+      "group_size": 1,
+      "seed": 3,
+      "initial_accuracy": 0.5,
+      "final_accuracy": 0.5,
+      "initial_reward": 0.3333333432674408,
+      "final_reward": 0.35,
+      "steps": 300
+    },
+    {
+      "group_size": 1,
+      "seed": 4,
+      "initial_accuracy": 0.5,
+      "final_accuracy": 0.5,
+      "initial_reward": 0.3333333432674408,
+      "final_reward": 0.3625,
+      "steps": 300
+    },
+    {
+      "group_size": 4,
+      "seed": 0,
+      "initial_accuracy": 0.5,
+      "final_accuracy": 1.0,
+      "initial_reward": 0.3333333432674408,
+      "final_reward": 0.990625,
+      "steps": 300
+    },
+    {
+      "group_size": 4,
+      "seed": 1,
+      "initial_accuracy": 0.5,
+      "final_accuracy": 1.0,
+      "initial_reward": 0.3333333432674408,
+      "final_reward": 0.996875,
+      "steps": 300
+    },
+    {
+      "group_size": 4,
+      "seed": 2,
+      "initial_accuracy": 0.5,
+      "final_accuracy": 1.0,
+      "initial_reward": 0.3333333432674408,
+      "final_reward": 1.0,
+      "steps": 300
+    },
+    {
+      "group_size": 4,
+      "seed": 3,
+      "initial_accuracy": 0.5,
+      "final_accuracy": 1.0,
+      "initial_reward": 0.3333333432674408,
+      "final_reward": 1.0,
+      "steps": 300
+    },
+    {
+      "group_size": 4,
+      "seed": 4,
+      "initial_accuracy": 0.5,
+      "final_accuracy": 1.0,
+      "initial_reward": 0.3333333432674408,
+      "final_reward": 1.0,
+      "steps": 300
+    },
+    {
+      "group_size": 8,
+      "seed": 0,
+      "initial_accuracy": 0.5,
+      "final_accuracy": 1.0,
+      "initial_reward": 0.3333333432674408,
+      "final_reward": 0.9984375,
+      "steps": 300
+    },
+    {
+      "group_size": 8,
+      "seed": 1,
+      "initial_accuracy": 0.5,
+      "final_accuracy": 1.0,
+      "initial_reward": 0.3333333432674408,
+      "final_reward": 0.996875,
+      "steps": 300
+    },
+    {
+      "group_size": 8,
+      "seed": 2,
+      "initial_accuracy": 0.5,
+      "final_accuracy": 1.0,
+      "initial_reward": 0.3333333432674408,
+      "final_reward": 0.9984375,
+      "steps": 300
+    },
+    {
+      "group_size": 8,
+      "seed": 3,
+      "initial_accuracy": 0.5,
+      "final_accuracy": 1.0,
+      "initial_reward": 0.3333333432674408,
+      "final_reward": 0.996875,
+      "steps": 300
+    },
+    {
+      "group_size": 8,
+      "seed": 4,
+      "initial_accuracy": 0.5,
+      "final_accuracy": 1.0,
+      "initial_reward": 0.3333333432674408,
+      "final_reward": 0.9984375,
+      "steps": 300
+    },
+    {
+      "group_size": 16,
+      "seed": 0,
+      "initial_accuracy": 0.5,
+      "final_accuracy": 1.0,
+      "initial_reward": 0.3333333432674408,
+      "final_reward": 0.99921875,
+      "steps": 300
+    },
+    {
+      "group_size": 16,
+      "seed": 1,
+      "initial_accuracy": 0.5,
+      "final_accuracy": 1.0,
+      "initial_reward": 0.3333333432674408,
+      "final_reward": 0.9984375,
+      "steps": 300
+    },
+    {
+      "group_size": 16,
+      "seed": 2,
+      "initial_accuracy": 0.5,
+      "final_accuracy": 1.0,
+      "initial_reward": 0.3333333432674408,
+      "final_reward": 0.99921875,
+      "steps": 300
+    },
+    {
+      "group_size": 16,
+      "seed": 3,
+      "initial_accuracy": 0.5,
+      "final_accuracy": 1.0,
+      "initial_reward": 0.3333333432674408,
+      "final_reward": 1.0,
+      "steps": 300
+    },
+    {
+      "group_size": 16,
+      "seed": 4,
+      "initial_accuracy": 0.5,
+      "final_accuracy": 1.0,
+      "initial_reward": 0.3333333432674408,
+      "final_reward": 0.99921875,
+      "steps": 300
+    },
+    {
+      "group_size": 32,
+      "seed": 0,
+      "initial_accuracy": 0.5,
+      "final_accuracy": 1.0,
+      "initial_reward": 0.3333333432674408,
+      "final_reward": 0.996875,
+      "steps": 300
+    },
+    {
+      "group_size": 32,
+      "seed": 1,
+      "initial_accuracy": 0.5,
+      "final_accuracy": 1.0,
+      "initial_reward": 0.3333333432674408,
+      "final_reward": 0.99921875,
+      "steps": 300
+    },
+    {
+      "group_size": 32,
+      "seed": 2,
+      "initial_accuracy": 0.5,
+      "final_accuracy": 1.0,
+      "initial_reward": 0.3333333432674408,
+      "final_reward": 0.998828125,
+      "steps": 300
+    },
+    {
+      "group_size": 32,
+      "seed": 3,
+      "initial_accuracy": 0.5,
+      "final_accuracy": 1.0,
+      "initial_reward": 0.3333333432674408,
+      "final_reward": 0.99921875,
+      "steps": 300
+    },
+    {
+      "group_size": 32,
+      "seed": 4,
+      "initial_accuracy": 0.5,
+      "final_accuracy": 1.0,
+      "initial_reward": 0.3333333432674408,
+      "final_reward": 0.9984375,
+      "steps": 300
+    }
+  ],
+  "summary": [
+    {
+      "group_size": 1,
+      "runs": 5,
+      "final_accuracy_mean": 0.5,
+      "final_accuracy_std": 0.0,
+      "final_reward_mean": 0.3375,
+      "final_reward_std": 0.015811388300841885
+    },
+    {
+      "group_size": 4,
+      "runs": 5,
+      "final_accuracy_mean": 1.0,
+      "final_accuracy_std": 0.0,
+      "final_reward_mean": 0.9974999999999999,
+      "final_reward_std": 0.0036443449342783226
+    },
+    {
+      "group_size": 8,
+      "runs": 5,
+      "final_accuracy_mean": 1.0,
+      "final_accuracy_std": 0.0,
+      "final_reward_mean": 0.9978125,
+      "final_reward_std": 0.000765465544619754
+    },
+    {
+      "group_size": 16,
+      "runs": 5,
+      "final_accuracy_mean": 1.0,
+      "final_accuracy_std": 0.0,
+      "final_reward_mean": 0.99921875,
+      "final_reward_std": 0.0004941058844013163
+    },
+    {
+      "group_size": 32,
+      "runs": 5,
+      "final_accuracy_mean": 1.0,
+      "final_accuracy_std": 0.0,
+      "final_reward_mean": 0.998515625,
+      "final_reward_std": 0.0008699631816922193
+    }
+  ]
+}
