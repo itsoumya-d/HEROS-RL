@@ -18,7 +18,7 @@
 python -m unittest discover -s tests -v
 ```
 
-**33 tests passed**, covering:
+**40 tests passed**, covering:
 
 - group-relative advantages (known values, zero-mean, constant-group zero,
   empty input),
@@ -30,7 +30,9 @@ python -m unittest discover -s tests -v
   and non-SQL answers,
 - forge reward integration with a fake forge returning HIGH/decision-required,
 - Pass@1, cons@k, and grouped evaluation,
-- dataset size, determinism, labels, prompts, and committed JSONL equality.
+- dataset size, determinism, labels, prompts, and committed JSONL equality,
+- hashed-ngram mining, four-iteration domain discovery, path patterns, and
+  deterministic run output.
 
 ## Dataset reproducibility
 
@@ -126,6 +128,15 @@ python scripts/evaluate.py \
 After a run, `scripts/evaluate.py` writes Pass@1, cons@64, mean accuracy, mean
 format reward, and per-case samples. Add those numbers to this file rather than
 estimating them.
+
+## Four-iteration corpus mining (synthetic fixture)
+
+`python scripts/mine_corpus.py` discovers `docs.example.com` (4/8 positive) and
+`proofs.example.org` (3/8 positive) in iteration 1, extracts
+`/docs/migrations/:id` and `/proofs/:id`, grows the seed set from 4 to 11, and
+rejects `blog.example.com` (1/12 = 8.3%) and `shop.example.com` (0/8). This is a
+synthetic fixture with a dependency-free hashed-ngram classifier, not a web
+crawl or the official fastText library.
 
 ## What would count as success
 

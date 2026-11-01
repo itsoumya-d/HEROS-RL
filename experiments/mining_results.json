@@ -1,0 +1,153 @@
+{
+  "fixture": "synthetic-mining-corpus",
+  "not_a_web_crawl": true,
+  "classifier": "hashed 1-2 gram logistic regression (fastText-style)",
+  "threshold": 0.1,
+  "final_seed_count": 11,
+  "iterations": [
+    {
+      "iteration": 1,
+      "seed_count": 4,
+      "domains_scanned": 4,
+      "added_documents": 6,
+      "selected_domains": [
+        {
+          "domain": "docs.example.com",
+          "total": 8,
+          "positives": 4,
+          "fraction": 0.5,
+          "path_patterns": [
+            "/docs/migrations/:id"
+          ],
+          "sample_urls": [
+            "https://docs.example.com/docs/migrations/0",
+            "https://docs.example.com/docs/migrations/1",
+            "https://docs.example.com/docs/migrations/2"
+          ]
+        },
+        {
+          "domain": "proofs.example.org",
+          "total": 8,
+          "positives": 3,
+          "fraction": 0.375,
+          "path_patterns": [
+            "/proofs/:id"
+          ],
+          "sample_urls": [
+            "https://proofs.example.org/proofs/0",
+            "https://proofs.example.org/proofs/1",
+            "https://proofs.example.org/proofs/2"
+          ]
+        }
+      ]
+    },
+    {
+      "iteration": 2,
+      "seed_count": 10,
+      "domains_scanned": 4,
+      "added_documents": 1,
+      "selected_domains": [
+        {
+          "domain": "docs.example.com",
+          "total": 8,
+          "positives": 4,
+          "fraction": 0.5,
+          "path_patterns": [
+            "/docs/migrations/:id"
+          ],
+          "sample_urls": [
+            "https://docs.example.com/docs/migrations/1",
+            "https://docs.example.com/docs/migrations/0",
+            "https://docs.example.com/docs/migrations/2"
+          ]
+        },
+        {
+          "domain": "proofs.example.org",
+          "total": 8,
+          "positives": 3,
+          "fraction": 0.375,
+          "path_patterns": [
+            "/proofs/:id"
+          ],
+          "sample_urls": [
+            "https://proofs.example.org/proofs/1",
+            "https://proofs.example.org/proofs/2",
+            "https://proofs.example.org/proofs/0"
+          ]
+        }
+      ]
+    },
+    {
+      "iteration": 3,
+      "seed_count": 11,
+      "domains_scanned": 4,
+      "added_documents": 0,
+      "selected_domains": [
+        {
+          "domain": "docs.example.com",
+          "total": 8,
+          "positives": 4,
+          "fraction": 0.5,
+          "path_patterns": [
+            "/docs/migrations/:id"
+          ],
+          "sample_urls": [
+            "https://docs.example.com/docs/migrations/0",
+            "https://docs.example.com/docs/migrations/3",
+            "https://docs.example.com/docs/migrations/1"
+          ]
+        },
+        {
+          "domain": "proofs.example.org",
+          "total": 8,
+          "positives": 3,
+          "fraction": 0.375,
+          "path_patterns": [
+            "/proofs/:id"
+          ],
+          "sample_urls": [
+            "https://proofs.example.org/proofs/2",
+            "https://proofs.example.org/proofs/1",
+            "https://proofs.example.org/proofs/0"
+          ]
+        }
+      ]
+    },
+    {
+      "iteration": 4,
+      "seed_count": 11,
+      "domains_scanned": 4,
+      "added_documents": 0,
+      "selected_domains": [
+        {
+          "domain": "docs.example.com",
+          "total": 8,
+          "positives": 4,
+          "fraction": 0.5,
+          "path_patterns": [
+            "/docs/migrations/:id"
+          ],
+          "sample_urls": [
+            "https://docs.example.com/docs/migrations/0",
+            "https://docs.example.com/docs/migrations/3",
+            "https://docs.example.com/docs/migrations/1"
+          ]
+        },
+        {
+          "domain": "proofs.example.org",
+          "total": 8,
+          "positives": 3,
+          "fraction": 0.375,
+          "path_patterns": [
+            "/proofs/:id"
+          ],
+          "sample_urls": [
+            "https://proofs.example.org/proofs/2",
+            "https://proofs.example.org/proofs/1",
+            "https://proofs.example.org/proofs/0"
+          ]
+        }
+      ]
+    }
+  ]
+}

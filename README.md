@@ -118,6 +118,22 @@ the committed file byte-for-byte.
 A Hugging Face dataset card is in `data/dataset_card.md`. Publishing requires
 an authenticated Hugging Face account; it is not performed automatically.
 
+## Four-iteration corpus mining
+
+`heros_rl/mining.py` implements a dependency-free fastText-style loop: hashed
+1–2 gram logistic regression, domain-level positive-fraction filtering
+(`> 10%`), URL path-pattern review, seed expansion, and four iterations.
+
+```bash
+python scripts/mine_corpus.py
+```
+
+The committed fixture (`experiments/mining_results.json`) is synthetic, not a
+web crawl. It discovers `docs.example.com` (4/8 positive) and
+`proofs.example.org` (3/8 positive), extracts `/docs/migrations/:id` and
+`/proofs/:id`, and grows the seed set from 4 to 11 documents. This is the
+official fastText library's *loop*, not the official fastText implementation.
+
 ## Training
 
 The default model is `deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B`.
@@ -200,7 +216,7 @@ does not learn — the expected failure mode of a group baseline with no group.
 heros_rl/          GRPO math, rewards, forge bridge, dataset, evaluation
 scripts/           dataset generation, TRL/Unsloth training, eval, toy ablation
 data/              500-case JSONL + Hugging Face dataset card
-tests/             33 stdlib unit tests (torch tests skip without torch)
+tests/             40 stdlib unit tests (torch tests skip without torch)
 experiments/       toy GRPO ablation results
 RESULTS.md         measured tests, toy ablation, GPU-run status
 ```
