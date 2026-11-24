@@ -1,6 +1,7 @@
 # SPDX-License-Identifier: MIT
 """HEROS-RL: critic-free GRPO for zero-downtime PostgreSQL migrations."""
 
+from .crawl_index import AppManifestRecord, ManifestStaticAnalyzer
 from .grpo import GRPOLossResult, group_relative_advantages, grpo_loss
 from .mining import (
     CorpusDocument,
