@@ -15,6 +15,13 @@ from .mining import (
     tokenize,
 )
 from .prompts import SYSTEM_PROMPT, build_prompt
+from .pipeline import (
+    DataSchemaContract,
+    EmbeddingClusterAnalyzer,
+    FieldSpec,
+    PipelineSanitizer,
+    ValidationReport,
+)
 from .rewards import (
     RewardBreakdown,
     RewardFunction,
@@ -26,6 +33,11 @@ from .rewards import (
 __all__ = [
     "CorpusDocument",
     "DomainResult",
+    "DataSchemaContract",
+    "EmbeddingClusterAnalyzer",
+    "FieldSpec",
+    "PipelineSanitizer",
+    "ValidationReport",
     "GRPOLossResult",
     "HashedNgramClassifier",
     "IterationResult",
